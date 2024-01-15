@@ -1,18 +1,18 @@
-//
-//  circle.swift
-//  grometryhelper
-//
-//  Created by 孟元森 on 2024-01-15.
-//
-
-import SwiftUI
-
-struct circle: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct Circle {
+    
+    // MARK: Stored properties
+    var radius: Double
+    
+    // MARK: Computed properties
+    var diameter: Double {
+        return 2 * radius
     }
-}
-
-#Preview {
-    circle()
+    
+    var perimeter: Double {
+        return 2 * Double.pi * radius
+    }
+    
+    var area: Double{
+        return Double.pi * radius * radius
+    }
 }
