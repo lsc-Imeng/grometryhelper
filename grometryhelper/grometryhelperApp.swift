@@ -11,7 +11,7 @@ import SwiftUI
 struct grometryhelperApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+        circleview()
         }
     }
 }
